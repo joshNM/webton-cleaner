@@ -24,6 +24,13 @@
             paginationClickable: true
         });
 
+       var clients = new Swiper('.swiper-clients', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 5,
+            paginationClickable: true,
+            spaceBetween: 30
+        });
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

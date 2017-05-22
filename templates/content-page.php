@@ -1,2 +1,6 @@
-<?php the_content(); ?>
-<?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
+<?php while (have_posts()) : the_post(); ?>
+    <div class="container l-island text-area-cms">
+        <?php the_content(); ?>
+    </div>
+<?php endwhile; ?>
+

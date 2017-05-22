@@ -1,0 +1,19 @@
+.Footer {
+    background: $brand-primary;
+    
+    .col-sm-6:last-of-type {
+        text-align: right;
+    }
+
+    ul {
+        text-align: right;
+        display: block;
+        max-width: 300px;
+        float: right;
+        margin-left: 50px;
+        margin-bottom: 0px;
+        list-style-type: none;
+        a {color: white}
+    }
+
+}
