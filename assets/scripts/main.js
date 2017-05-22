@@ -19,6 +19,11 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        var banner = new Swiper('.swiper-banner', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true
+        });
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

@@ -1,0 +1,22 @@
+.List {
+    
+    margin-bottom: 0px;
+    padding-left: 0px;
+
+    &--inline li {
+        display: inline-block;
+    }
+
+    &--margin-right li {
+        margin-right: 12px;
+    }
+
+    &--margin-left li {
+        margin-left: 12px;
+    }
+
+    &--text-right {
+        text-align: right;
+    }
+
+}

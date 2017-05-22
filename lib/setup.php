@@ -27,7 +27,8 @@ function setup() {
   // Register wp_nav_menu() menus
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus([
-    'primary_navigation' => __('Primary Navigation', 'sage')
+    'primary_navigation' => __('Primary Navigation', 'sage'),
+    'secondary_navigation' => __('Secondary Navigation', 'sage')
   ]);
 
   // Enable post thumbnails
@@ -97,10 +98,21 @@ function display_sidebar() {
 function assets() {
   wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), false, null);
 
-  if (is_single() && comments_open() && get_option('thread_comments')) {
-    wp_enqueue_script('comment-reply');
-  }
+  wp_enqueue_style( 'swipercss', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.css' );
+
+  wp_enqueue_style( 'fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
+
+  wp_enqueue_style( 'slicknavcss', 'https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css' );
+
+  wp_enqueue_script( 'swiperjs', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js', array('jquery'), '1' , true );
+
+  wp_enqueue_script( 'slicknavjs', 'https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js', array('jquery'), '1' , true );
 
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
+
+  // if (is_single() && comments_open() && get_option('thread_comments')) {
+  //   wp_enqueue_script('comment-reply');
+  // }
+  
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);

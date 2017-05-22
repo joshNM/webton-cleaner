@@ -1,0 +1,41 @@
+.Header {
+
+    
+    .Main-nav {
+        background: $brand-primary;
+        padding: 6px 0;
+
+        a {
+            color: white;
+        }
+    }
+
+    .Secondary-nav {
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        ul {
+            position: relative;
+            top: 40px;
+        }
+
+        li {
+            font-size: 19px;
+        }
+
+        .col-sm-9 a {
+            color: $brand-primary;
+            font-weight: bold;
+            padding: 6px 12px;
+            border-radius: 20px;
+
+            &:hover {
+                background: #e5e5e5;
+            }
+        }
+    }
+
+}

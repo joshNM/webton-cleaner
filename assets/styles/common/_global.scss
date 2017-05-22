@@ -1,1 +1,67 @@
+/*--------------------------------------------------------------
+## RESET
+--------------------------------------------------------------*/
 
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr{
+    margin-top: 0;
+    margin-bottom:1.5rem;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+## GLOBAL/MISC
+--------------------------------------------------------------*/
+html, body {
+    font-size: 16px/1.5;
+    padding: 0;
+    margin: 0;
+}
+
+/*--------------------------------------------------------------
+## HELPERS
+--------------------------------------------------------------*/
+.island {
+  padding: 1.5rem 0;
+}
+
+.l-island {
+  padding: 2rem 0;
+}
+
+.xl-island {
+  padding: 3rem 0;
+}
+
+.south-coast {
+  padding-bottom: 1.5rem;
+}
+
+.north-coast {
+  padding-top: 2rem;
+}
+
+.l-south-coast {
+  padding-bottom: 3rem;
+}
+
+.l-north-coast {
+  padding-top: 3rem;
+}
+
+@media (max-width: 1024px) {
+  .xl-island, .l-island {
+    padding: 1.5rem 0;
+  }
+  .l-south-coast {
+    padding-bottom: 1.5rem;
+  }
+  .l-north-coast {
+    padding-top: 1.5rem;
+  }
+}
