@@ -14,4 +14,15 @@
             top: 0px;
         }
     }
+    a.special:before {
+        display: none;
+    }
+}
+
+span.wpcf7-not-valid-tip {
+    margin-bottom: 10px;
+}
+
+div.wpcf7 .ajax-loader {
+    display: none;
 }
