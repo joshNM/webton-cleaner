@@ -97,3 +97,9 @@
         padding: 3rem;
     }
 }
+
+@media(max-width: 767px) {
+    .text-area-cms .col-md-3 {
+        display: none;
+    }
+}
