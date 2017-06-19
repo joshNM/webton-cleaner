@@ -11,6 +11,14 @@
             </div>
         </div>
     </div>
+    
+    <div class="fixed-cta">
+        <ul>
+            <li><a href="<?php the_permalink(15); ?>">Contact Us</a></li>
+            <li><a href="<?php the_permalink(15); ?>">Request a Callback</a></li>
+        </ul>
+    </div>
+
 </section>
 
 <section class="Home-service-icons l-south-coast">

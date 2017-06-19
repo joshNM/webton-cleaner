@@ -1,6 +1,7 @@
 // HOME
 .Home-intro {
-    
+    position: relative;
+    overflow-x: hidden;
     .col-md-8 {
         position: relative;
     }
@@ -42,6 +43,23 @@
         i {
             font-size: 10px;
             color: $link-color;
+        }
+    }
+
+    .fixed-cta {
+        position: absolute;
+        right: -120px;
+        top: 25%;
+        transform: rotate(90deg);
+        li {
+            display: inline-block;
+            background: #20255d;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            a {color: white;}
         }
     }
 
@@ -106,5 +124,8 @@
         article {
             padding: 1rem;
         }
+    }
+    .fixed-cta {
+        display: none;
     }
 }
