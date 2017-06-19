@@ -5,8 +5,8 @@
       <div class="row">
         <div class="col-sm-6">
           <ul class="List List--inline List--margin-right">
-            <li><a href="">0113 282 828</a></li>
-            <li><a href="">info@webtoncleaningservices.co.uk</a></li>
+            <li><a href="tel:<?php the_field('phone_number', 'option'); ?>"><?php the_field('phone_number', 'option'); ?></a></li>
+            <li><a href="mailto:<?php the_field('email_address', 'option'); ?>"><?php the_field('email_address', 'option'); ?></a></li>
             <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
             <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
           </ul>

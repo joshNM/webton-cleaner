@@ -1,0 +1,35 @@
+.Team {
+    
+    margin: 20px 0;
+    background: #e2f6c0;
+    position: relative;
+
+    .team-img {
+        max-width: 100%;
+        height: auto;
+        z-index: 2;
+        position: relative;
+    }
+
+    .team-overlay {
+        position: absolute;
+        left: 0;
+        top: -20px;
+        z-index: 1;
+        max-height: 110%;
+        width: auto;
+    }
+
+    .team-info {
+        padding-left: 50px;
+        padding-top: 35px;
+        text-align: right;
+        h2 {
+            margin-bottom: 0px;
+        }
+        h3 {
+            color: $link-color;
+        }
+    }
+
+}

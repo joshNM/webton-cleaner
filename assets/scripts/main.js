@@ -19,6 +19,8 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        AOS.init();
+        
         var banner = new Swiper('.swiper-banner', {
             pagination: '.swiper-pagination',
             paginationClickable: true
@@ -29,6 +31,12 @@
             slidesPerView: 5,
             paginationClickable: true,
             spaceBetween: 30
+        });
+
+        var testimonials = new Swiper('.swiper-testimonials', {
+            pagination: '.swiper-pagination-testimonial',
+            paginationClickable: true,
+            autoplay: 3000,
         });
 
       },

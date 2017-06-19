@@ -1,4 +1,5 @@
 .Social {
+    border-top: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
     text-align: center;
     i {
@@ -6,5 +7,17 @@
         margin-bottom: 12px;
     }
     p:last-child {margin-bottom: 0px;}
+
+    .fa-facebook {
+        color: #3b5998;
+    }
+
+    .fa-twitter {
+        color: #55acee;
+    }
+
+    .fa-newspaper-o {
+        color: #8fc439;
+    }
 
 }
