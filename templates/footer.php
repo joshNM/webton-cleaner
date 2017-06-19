@@ -2,7 +2,8 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                
+                <?php $footerLogo = get_field('footer_logo', 'option'); ?>
+                <img src="<?php echo $footerLogo['url']; ?>" alt="<?php echo $footerLogo['alt']; ?>" title="<?php echo $footerLogo['title']; ?>">
             </div>
             <div class="col-sm-6">
                 <?php

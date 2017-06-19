@@ -1,0 +1,38 @@
+// MEDIA QUERIES
+.slicknav_menu {
+    background: #2b317d !important;
+    display: none;
+}
+@media(max-width: 1250px) {
+    // Header
+    .Header .col-sm-9 {
+        width: 100% !important;
+        flex-basis: 100% !important;
+        max-width: 100% !important;
+        text-align: center;
+    }
+    .Header .Secondary-nav ul {
+        // display: none;
+        top: 0px !important;
+        margin-top: 10px;
+        li {
+            margin-left: 0 !important;
+            font-size: 16px !important;
+        }
+    }
+    .Header .col-sm-3 {
+        width: 100% !important;
+        flex-basis: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+    }
+
+    .Header .Main-nav {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: block;
+    }
+
+}

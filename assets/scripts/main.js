@@ -20,17 +20,32 @@
       init: function() {
         // JavaScript to be fired on all pages
         AOS.init();
-        
+        $('#menu-primary-navigation').slicknav();
         var banner = new Swiper('.swiper-banner', {
             pagination: '.swiper-pagination',
-            paginationClickable: true
+            paginationClickable: true,
+            autoplay: 4000
         });
 
        var clients = new Swiper('.swiper-clients', {
             pagination: '.swiper-pagination',
             slidesPerView: 5,
             paginationClickable: true,
-            spaceBetween: 30
+            spaceBetween: 30,
+            breakpoints: {
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 10
+              },
+              480: {
+                slidesPerView: 1,
+                spaceBetween: 20
+              },
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 30
+              }
+            }
         });
 
         var testimonials = new Swiper('.swiper-testimonials', {

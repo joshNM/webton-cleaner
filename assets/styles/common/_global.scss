@@ -34,6 +34,18 @@ html, body {
 h1 {
   color: $brand-primary;
 }
+a.special {
+  position: relative;
+  display: inline-block;
+}
+a.special:before {
+  content: "...";
+  font-size: 50px;
+  color: #94cc35;
+  position: absolute;
+  left: -35px;
+  bottom: -12px;
+}
 
 /*--------------------------------------------------------------
 ## HELPERS

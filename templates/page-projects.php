@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <?php $articles = new WP_Query(['post_type' => 'post']); ?>
+                <?php $articles = new WP_Query(['post_type' => 'project']); ?>
                 <?php while ($articles->have_posts()) : $articles->the_post(); ?>
                 <article>
                     <?php if(has_post_thumbnail()) : ?>

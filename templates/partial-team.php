@@ -9,6 +9,7 @@
             </div>
             <div class="col-sm-12 col-md-6 team-info" data-aos="fade-up" data-aos-duration="1000">
                 <?php the_field('content', 'option') ?>
+                <a href="<?php the_permalink(102); ?>" class="special">Read<br> More</a>
             </div>
         </div>
     </div>

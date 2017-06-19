@@ -52,3 +52,25 @@ function create_post_type_testimonial() {
         )
     );
 }
+
+/**
+ * Add Projects CPT
+ */
+add_action( 'init', __NAMESPACE__ . '\\create_post_type_project', 0);
+function create_post_type_project() {
+    register_post_type( 'project',
+        array(
+            'labels' => array(
+                'name' => __( 'Projects' ),
+                'singular_name' => __( 'Project' )
+            ),
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-hammer',
+        'rewrite' => true,
+        'capability_type' => 'post',
+        'supports' => array('title', 'editor', 'thumbnail'),
+        )
+    );
+}
+
